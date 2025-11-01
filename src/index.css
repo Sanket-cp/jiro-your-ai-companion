@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Jarvis-inspired dark futuristic theme */
+    --background: 220 25% 6%;
+    --foreground: 180 100% 90%;
+
+    --card: 220 20% 10%;
+    --card-foreground: 180 100% 90%;
+
+    --popover: 220 20% 8%;
+    --popover-foreground: 180 100% 90%;
+
+    --primary: 188 100% 50%;
+    --primary-foreground: 220 25% 6%;
+    --primary-glow: 188 100% 60%;
+
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 180 100% 90%;
+
+    --muted: 220 15% 20%;
+    --muted-foreground: 180 50% 60%;
+
+    --accent: 188 100% 45%;
+    --accent-foreground: 220 25% 6%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 180 100% 90%;
+
+    --border: 188 50% 20%;
+    --input: 220 20% 15%;
+    --ring: 188 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Glowing effects */
+    --glow-primary: 0 0 20px hsl(188 100% 50% / 0.3);
+    --glow-strong: 0 0 30px hsl(188 100% 50% / 0.5);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

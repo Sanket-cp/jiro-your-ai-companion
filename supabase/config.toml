@@ -1,0 +1,4 @@
+project_id = "vhhkauewzebsdzugxylu"
+
+[functions.jiro-chat]
+verify_jwt = false
